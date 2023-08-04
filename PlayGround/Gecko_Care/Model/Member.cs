@@ -17,10 +17,7 @@
         public string Morph { get; set; }
         public string Memo { get; set; }
         public  int MotherSeq { get; set; }
-        public int FaterSeq { get; set; }
+        public int FatherSeq { get; set; }
         public DateTime CreateTime { get; set; }
-
-
-
     }
 }

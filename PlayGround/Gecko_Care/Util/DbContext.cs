@@ -3,11 +3,11 @@ using System.Data.SqlClient;
 
 namespace Gecko_Care.Util
 {
-	public class DbContext 
+	public class DbConnectoin 
 	{
 		private readonly IConfiguration _config;
 
-		public DbContext(IConfiguration config)
+		public DbConnectoin(IConfiguration config)
 		{
 			_config = config;
 		}

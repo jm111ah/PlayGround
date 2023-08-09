@@ -91,13 +91,13 @@ namespace Gecko_Care.Controllers
         }
 
         [HttpDelete("delete")]
-        public async Task<IActionResult> DeleteMember(int seq)
+        public async Task<IActionResult> DeleteMember(int memberSeq)
         {
             try
             {
                 using IDbConnection db = _dbContext.GetConnection();
 
-                int result = await db.ExecuteAsync(Query.Query.DeleteMember, new { seq });
+                int result = await db.ExecuteAsync(Query.Query.DeleteMember, new { memberSeq });
 
                 if (result > 0)
                 {
